@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>17 April - Ek Yaadgar Pal</title>
+  <style>
+    :root {
+      --main-bg: linear-gradient(135deg, #fff0f5, #fdf6f9);
+      --primary: #a14c66;
+      --text: #3a3a3a;
+      --card-bg: rgba(255,255,255,0.85);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: var(--main-bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--primary);
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .line {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 24px 30px;
+      margin: 40px 0;
+      font-size: 1.4rem;
+      line-height: 1.8;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .line:nth-child(n) { animation-delay: calc(0.3s * var(--i)); }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section {
+      padding: 80px 20px 100px;
+    }
+
+    .memory-box {
+      background: var(--card-bg);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+      text-align: center;
+      animation: zoomFade 1.5s ease;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.8;
+    }
+
+    .nav-btn {
+      display: block;
+      margin: 40px auto 0;
+      text-align: center;
+    }
+
+    .nav-btn a {
+      text-decoration: none;
+      background: var(--primary);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .nav-btn a:hover {
+      background: #812e4f;
+    }
+
+    @keyframes zoomFade {
+      from {
+        opacity: 0;
+        transform: scale(0.85);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>17 April 2024 - Ek Yaadgar Pal</header>
+
+  <!-- Section 1: Emotional Memory Lines -->
+  <section class="container section" id="emotions">
+    <div class="line" style="--i:1">Tumhe pheli baar dekhna yaad hai..</div>
+    <div class="line" style="--i:2">Phir tumse pheli baar baat krna bhi yaad hai...</div>
+    <div class="line" style="--i:3">Yaad hai tumhare intzaar me raaton me jaagna...<br>Or tumhe dekhne k liye intzaar krna bhi ...</div>
+    <div class="line" style="--i:4">Tumhare saath hasna bhi yaad hai, <br>Tumhare liye rona bhi yaad hai...</div>
+    <div class="line" style="--i:5">Tumhe sab kuch batana bhi yaad hai, <br>Or bahut kuch chupana bhi....</div>
+    <div class="line" style="--i:6">Yaad hai tumhari aankhein or tumhari khushboo bhi...<br>Tumhari hasi bhi, tumhari awaaz bhi..</div>
+    <div class="line" style="--i:7">Yaad hai tumhe dur se dekhna or tumhare pass hone ka ehsaas bhi...</div>
+    <div class="line" style="--i:8">Tumhe rooj yaad krna bhi yaad hai <br>or roj tumhe bulane ki koshish krna bhi...</div>
+    <div class="line" style="--i:9">Tumhe milne ki khushi bhi yaad hai <br>or tumhe na milne ka gham bhi ....</div>
+
+    <div class="nav-btn">
+      <a href="#firstday">Woh Din Jisne Sab Badal Diya</a>
+    </div>
+  </section>
+
+  <!-- Section 2: First Day Seen -->
+  <section class="section" id="firstday">
+    <div class="memory-box">
+      <h2>Us Din Ki Yaad</h2>
+      <p>
+        Aaj ka hi din tha, jab aap pehli baar coaching mein aayi thi...<br><br>
+        Shuruaat toh ek pal ki thi,<br>
+        Par us ek pal ne zindagi bhar ka ehsaas de diya.<br><br>
+        Jab maine aapko pehli baar dekha, <br>
+        uss pal mein kuch alag tha... kuch khaas...<br><br>
+        Shayad wahi pal tha jahan se sab kuch shuru hua...
+      </p>
+
+      <div class="nav-btn" style="margin-top: 40px;">
+        <a href="#emotions">Wapas Chalo</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
